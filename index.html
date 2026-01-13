@@ -7,146 +7,173 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <div class="mark">C</div>
-        <div>
-          <div style="font-weight:700">CakeHub</div>
-        </div>
-      </div>
-      <nav>
-        <div class="pill">Kategori</div>
-        <div class="pill">Tentang</div>
-        <div class="pill">Bantuan</div>
-        <div class="pill">Login</div>
-      </nav>
-    </header>
 
-    <section class="hero">
-      <div class="hero-card">
-        <h1>Semua kue basah favoritmu di satu tempat</h1>
-        <p>Temukan UMKM lokal, bandingkan menu, dan pesan dengan mudah — fresh & siap antar.</p>
+<div class="container">
 
-        <div class="search">
-          <input id="searchInput" placeholder="Cari kue, nama toko, atau kategori..." />
-          <button onclick="document.getElementById('searchInput').focus()">Cari</button>
-        </div>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="logo">
+      <div class="mark">C</div>
+      <div style="font-weight:700">CakeHub</div>
+    </div>
+    <nav>
+      <div class="pill">Kategori</div>
+      <div class="pill">Tentang</div>
+      <div class="pill">Bantuan</div>
+      <div class="pill">Login</div>
+    </nav>
+  </header>
 
-        <div class="hero-cta">
-          <div class="chip">Terdekat</div>
-          <div class="chip">Free ongkir hari ini</div>
-          <div class="chip">Promo 2+1</div>
-        </div>
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-card">
+      <h1>Semua kue basah favoritmu di satu tempat</h1>
+      <p>Temukan UMKM lokal, bandingkan menu, dan pesan dengan mudah.</p>
+
+      <div class="search">
+        <input placeholder="Cari kue, nama toko, atau kategori..." />
+        <button>Cari</button>
       </div>
 
-      <aside class="promo">
-        <h3>UMKM Pilihan</h3>
-        <img alt="promo" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='300'><rect x='0' y='0' width='600' height='300' rx='12' fill='%23fff0f8'/><text x='50%' y='50%' fill='%23ff97c2' font-size='20' text-anchor='middle' dominant-baseline='middle'>Foto Promo Placeholder</text></svg>" />
-        <p style="color:var(--muted);font-size:13px;margin-top:8px">Dukung UMKM lokal — pesan sekarang!</p>
-      </aside>
-    </section>
-
-    <!-- kategori-->
-    <section class="section">
-      <h3>Telusuri Kategori</h3>
-      <div class="categories">
-        <div class="cat">Jajanan Pasar</div>
-        <div class="cat">Kue Tradisional</div>
-        <div class="cat">Snack Box</div>
-        <div class="cat">Prasmanan</div>
+      <div class="hero-cta">
+        <div class="chip">Terdekat</div>
+        <div class="chip">Free Ongkir</div>
+        <div class="chip">Promo</div>
       </div>
-    </section>
+    </div>
 
-    <!-- UMKM list -->
-    <section class="section">
-      <h3>UMKM Populer</h3>
-      <div class="sellers">
-        <div class="seller">
-          <div class="thumbnail">SR</div>
-          <div>
-            <div style="font-weight:700">Kue Basah Selfina</div>
-            <small>4.9 • 1.2k pesanan</small>
-          </div>
-        </div>
-        <div class="seller">
-          <div class="thumbnail">MB</div>
-          <div>
-            <div style="font-weight:700">Manis Buah</div>
-            <small>4.8 • 980 pesanan</small>
-          </div>
-        </div>
-        <div class="seller">
-          <div class="thumbnail">SK</div>
-          <div>
-            <div style="font-weight:700">Sakauik</div>
-            <small>4.7 • 760 pesanan</small>
-          </div>
-        </div>
-        <div class="seller">
-          <div class="thumbnail">S</div>
-          <div>
-            <div style="font-weight:700">Snackies</div>
-            <small>4.6 • 540 pesanan</small>
-          </div>
-        </div>
+    <aside class="promo">
+  <h3>UMKM Pilihan</h3>
+
+  <div class="umkm-list">
+
+    <div class="umkm-item">
+      <img src="img/kupi-lumer.jpg" alt="Kupi & Lumer">
+      <div class="umkm-info">
+        <div class="umkm-name">Kupi & Lumer</div>
+        <div class="umkm-rating">⭐ 4.9</div>
       </div>
-    </section>
+    </div>
 
-    <!-- rekomendasi produk -->
-    <section class="section">
-      <h3>Rekomendasi Untukmu</h3>
-      <div class="grid" id="productGrid"></div>
-    </section>
-
-    <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-        <div>
-          <div style="font-weight:700">CakeHub</div>
-          <div style="color:var(--muted);font-size:13px">Marketplace yang menyatukan UMKM kue basah lokal.</div>
-        </div>
-        <div style="color:var(--muted);font-size:13px">Contact • Terms • Privacy</div>
+    <div class="umkm-item">
+      <img src="img/kue-basah-selfina.jpg" alt="Kue Basah Selfina">
+      <div class="umkm-info">
+        <div class="umkm-name">Kue Basah Sefina</div>
+        <div class="umkm-rating">⭐ 4.8</div>
       </div>
-    </footer>
+    </div>
+
+    <div class="umkm-item">
+      <img src="img/manis-buah.jpg" alt="Manis Buah">
+      <div class="umkm-info">
+        <div class="umkm-name">Manis Buah</div>
+        <div class="umkm-rating">⭐ 4.6</div>
+      </div>
+    </div>
 
   </div>
+</aside>
 
-  <button class="cart-btn" id="openCart">Keranjang (0)</button>
-  <aside class="cart-side" id="cartSide">
-    <div style="display:flex;justify-content:space-between;align-items:center">
-      <h3>Keranjang</h3>
-      <button onclick="toggleCart()">Tutup</button>
-    </div>
-    <div id="cartItems" style="margin-top:12px">Tidak ada item</div>
-    <div style="margin-top:18px;display:flex;justify-content:space-between;align-items:center">
-      <div style="font-weight:700">Total</div>
-      <div style="font-weight:900;color:var(--price)">Rp <span id="totalAmt">0</span></div>
-    </div>
-    <div style="margin-top:12px">
-      <button style="width:100%;padding:10px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-weight:700">Checkout</button>
-    </div>
-  </aside>
+  </section>
 
-  <div id="modal" style="display:none;position:fixed;inset:0;background:rgba(15,10,10,0.36);align-items:center;justify-content:center;z-index:60">
-    <div style="background:var(--card);padding:14px;border-radius:14px;width:min(520px,92%);box-shadow:var(--shadow)">
-      <div style="display:flex;gap:10px">
-        <div style="flex:1">
-          <div style="height:220px;border-radius:10px;background:linear-gradient(135deg,#fff0f8,#fff4f9);display:flex;align-items:center;justify-content:center;font-weight:800">Foto</div>
-        </div>
-        <div style="width:220px">
-          <h3 id="mdName">Nama Kue</h3>
-          <div style="color:var(--muted)" id="mdSeller">oleh Seller</div>
-          <div style="margin-top:12px;color:#ff5a99;font-weight:800" id="mdPrice">Rp 0</div>
-          <p style="color:var(--muted);margin-top:12px">Deskripsi singkat kue: tekstur, rasa, dan tips penyajian.</p>
-          <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
-            <button onclick="addToCart(currentProduct)" class="add">Tambah ke Keranjang</button>
-            <button onclick="closeModal()" style="padding:8px;border-radius:10px;border:1px solid #eee;background:#fff">Batal</button>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- ================= PRODUK ================= -->
+  <section class="section">
+    <h3>Rekomendasi Untukmu</h3>
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+</div>
+
+<!-- ================= CART BUTTON ================= -->
+<button class="cart-btn" id="openCart">Keranjang (0)</button>
+
+<!-- ================= CART SIDE ================= -->
+<aside class="cart-side" id="cartSide">
+
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <h3>Keranjang</h3>
+    <button onclick="toggleCart()" style="border:none;background:none;font-size:18px">✕</button>
   </div>
 
-  <script src="js/script.js"></script>
+  <div id="cartItems">Tidak ada item</div>
+
+  <div style="margin-top:14px;display:flex;justify-content:space-between;font-weight:700">
+    <span>Total</span>
+    <span>Rp <span id="totalAmt">0</span></span>
+  </div>
+
+  <button
+    style="
+      margin-top:12px;
+      padding:10px;
+      border:none;
+      border-radius:10px;
+      background:var(--accent);
+      color:#fff;
+      font-weight:700;
+      width:100%;
+    ">
+    Checkout
+  </button>
+
+</aside>
+
+<!-- ================= MODAL ================= -->
+<div id="modal" class="modal-overlay">
+
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+
+    <div class="modal-content">
+
+      <!-- FOTO -->
+      <div class="modal-image">
+        <img id="mdImage" class="modal-img" alt="Foto Produk">
+      </div>
+
+      <!-- INFO -->
+      <div class="modal-info">
+        <h2 id="mdName"></h2>
+        <div class="md-seller" id="mdSeller"></div>
+
+        <div class="md-price" id="mdPrice"></div>
+
+        <div class="md-rating">
+          ⭐ <span id="mdRating"></span>
+          <span>(Direkomendasikan)</span>
+        </div>
+
+        <div class="md-preorder" id="mdPreorder">
+          <span class="po-label">⏱ PRE-ORDER</span>
+          <span class="po-desc">Produk dibuat setelah pemesanan</span>
+        </div>
+
+        <div class="md-info">
+          ⏰ Estimasi produksi: <strong>H+2 – H+3</strong>
+        </div>
+
+        <div class="md-info">
+          🧾 Minimal pemesanan: <strong>10 pcs</strong>
+        </div>
+
+        <p class="md-desc">
+          Kue basah pilihan dengan rasa lezat dan kualitas UMKM lokal.
+        </p>
+
+        <div class="modal-action">
+          <button class="btn-primary" onclick="pesanSekarang(currentProduct)">
+            Pre-Order Sekarang
+          </button>
+          <button class="btn-secondary" onclick="addToCart(currentProduct)">
+            Tambah ke Keranjang
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
